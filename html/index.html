@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Abdellahi Seyid — Software Engineering Student & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Abdellahi Seyid — software engineering student at SupNum (Nouakchott, Mauritania). Full-stack development, cybersecurity and AI integration." />
+  <meta property="og:title" content="Abdellahi Seyid — Portfolio" />
+  <meta property="og:description" content="Building innovative digital solutions through software engineering, modern web technologies, and cybersecurity." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-logo" id="preloader-logo">AB</div>
+    <div class="preloader-counter" id="preloader-counter">000</div>
+  </div>
+
+  <!-- WebGL canvas -->
+  <div id="webgl"></div>
+
+  <!-- UI overlay -->
+  <div id="ui" class="ui-hidden">
+    <header class="topbar" role="banner">
+      <a href="#" class="logo" id="logo" aria-label="Abdellahi Seyid — home">Abdev48</a>
+      <nav class="topnav" role="navigation" aria-label="Main">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn is-active" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang="ar">AR</button>
+        </div>
+        <button type="button" class="pill pill-accent" id="btn-talk" data-i18n="ui.letsTalk">Let's talk</button>
+      </nav>
+    </header>
+
+    <!-- Live region announcing the current slide (real text for a11y/SEO) -->
+    <div class="sr-only" aria-live="polite" id="slide-announcer">
+      <h1 id="slide-heading">Abdellahi Seyid — Software Engineering Student</h1>
+    </div>
+
+    <!-- Info panel -->
+    <aside class="panel" id="panel" role="dialog" aria-modal="false" aria-labelledby="panel-title" hidden>
+      <button type="button" class="panel-close" id="panel-close" aria-label="Close">×</button>
+      <div class="panel-inner" id="panel-inner"><!-- built by JS --></div>
+    </aside>
+
+    <footer class="bottombar">
+      <div class="progress" id="progress" aria-hidden="true">
+        <span id="progress-current">01</span><span class="progress-sep">/</span><span id="progress-total">09</span>
+      </div>
+      <button type="button" class="pill pill-next" id="btn-next">
+        <span class="pill-dot" aria-hidden="true">○</span>
+        <span data-i18n="ui.next">Next</span>
+        <span aria-hidden="true">→</span>
+      </button>
+      <p class="hint" id="hint" data-i18n="ui.hint">Scroll · click the case</p>
+    </footer>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"><span>+</span></div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <!-- Static fallback (shown only when WebGL is unavailable) -->
+  <main id="fallback" hidden></main>
+
+  <noscript>
+    <main style="padding:3rem;font-family:sans-serif;color:#fafafa;background:#09090b">
+      <h1>Abdellahi Seyid</h1>
+      <p>Software Engineering Student | Full-Stack Developer — Nouakchott, Mauritania.</p>
+      <p>This portfolio needs JavaScript. Find me on
+        <a style="color:#635bff" href="https://github.com/abdellahi1000">GitHub</a> and
+        <a style="color:#635bff" href="https://www.linkedin.com/in/abdellahi-seyid-2035b8430">LinkedIn</a>.</p>
+    </main>
+  </noscript>
+
+  <script src="js/i18n.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

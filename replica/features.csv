@@ -1,0 +1,17 @@
+feature,area,priority,original,clone,notes
+Hero with brand name and tagline,hero,must,yes,no,your name and tagline
+Repeating product section template (heading + description + feature bullets + CTA),sections,must,yes,no,driven by a content array
+Feature list with inline SVG icons,sections,must,yes,no,own icons
+Outbound CTA link per product,sections,must,yes,no,
+Next product step navigation,navigation,must,yes,no,also plain scroll
+Footer with build-with-us / contact link,footer,must,yes,no,
+Responsive mobile layout,layout,must,yes,no,
+Scroll-linked section transitions / animation,polish,should,yes,no,respect prefers-reduced-motion
+Product imagery or device mockups per section,sections,should,yes,no,your own screenshots
+Per-product social proof stat,sections,should,yes,no,only real numbers
+App store badge links,sections,should,yes,no,only if a product has one
+Anchor deep links to each section,navigation,could,yes,no,
+SEO meta and social share card,meta,could,yes,no,
+Analytics,meta,could,yes,no,
+Scout's products and their content,content,skip,yes,skip,their businesses — you showcase your own projects
+Scout branding and copy,content,skip,yes,skip,clean-room rule
